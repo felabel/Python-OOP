@@ -13,10 +13,12 @@ class Car:
 # Creating instances of the Car class
 car1 = Car("Toyota", "Camry")
 car2 = Car("Honda", "Civic")
+car3 = Car("Toyota", "COROLLA")
 
 # Accessing instance variables
 print(f"Car 1: {car1.brand} {car1.model}")
 print(f"Car 2: {car2.brand} {car2.model}")
+print(f"Car 3: {car3.brand} {car3.model}")
 
 # Accessing class variable
 print(f"Total Cars: {Car.total_cars}")

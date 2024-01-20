@@ -1,13 +1,14 @@
 # The __init__ method is run as soon as an object of a class is instantiated (i.e. created). The method is useful to do any initialization (i.e. passing initial values to your object) you want to do with your object. Notice the double underscores both at the beginning and at the end of the name.
 
 class Person:
-    def __init__(self, name):
+    def __init__(self, name, whoInspires):
         self.name = name
+        self.whoInspires = whoInspires
 
     def say_hi(self):
-        print('Hello, my name is', self.name)
+        print('Hello, my name is', self.name, 'and someone who inspires me is', self.whoInspires)
 
-p = Person('Swaroop')
+p = Person('Felicity', 'Precious Cole')
 p.say_hi()
 # The previous 2 lines can also be written as
 # Person('Swaroop').say_hi()
